@@ -84,6 +84,10 @@ class Jugador {
         alert("Jugador reseteado")
     }
 }
+/**
+ * Función que registrar los usuarios
+ * 
+ */
 
 function registrarUsuarios(){
     let jug1_nombre = document.getElementById("jug1_nombre").value;
@@ -103,10 +107,18 @@ function registrarUsuarios(){
     console.log(jugadores)
     document.querySelector("p[id=comienzo_juego]").innerHTML= "El juego ha empezado."
 }
+/**
+ * Función que elimina un zombie
+ * 
+ */
 function eliminar_Zombie(){
     jugadores[0].sumarPuntuacion();
     document.querySelector("p[id=estado_jugador]").innerHTML= jugadores[0].getEstado();
 }
+/**
+ * Función que pone en contacto al usuario con el zombie
+ * 
+ */
 function contacto_Zombie(){
     jugadores[0].restarPuntuacion();
     document.querySelector("p[id=estado_jugador]").innerHTML= jugadores[0].getEstado();
