@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        
+        <div>
+            <p>Jugador 1</p>
+            <p>Nombre: <input type="text" id="jug1_nombre"></p>
+            <p>Apellidos: <input type="text" id="jug1_apellidos"></p>
+        
+            <p>Jugador 2</p>
+            <p>Nombre: <input type="text" id="jug2_nombre"></p>
+            <p>Apellidos: <input type="text" id="jug2_apellidos"></p>
+            <input type="button" id= "boton1" value="Registrar jugadores">
+            <script src="script.js"></script>
+        </div>
+
+        <div>
+            <p id="comienzo_juego"> El juego no ha empezado</p>
+            <p id="estado_jugador"> </p>
+            <input type="button" id= "boton2" value="Eliminar Zombie" onclick="eliminar_Zombie()">
+            <input type="button" id= "boton3" value="Ser alcanzado por Zombie" onclick="contacto_Zombie()">
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
